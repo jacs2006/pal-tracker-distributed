@@ -5,10 +5,13 @@ buildscript {
         springBootVersion = "1.5.7.RELEASE"
         springVersion = "4.3.8.RELEASE"
         mysqlVersion = "6.0.6"
+        springCloudDependenciesVersion = "Edgware.SR1"
+        springCloudServicesVersion = "1.6.1.RELEASE"
     }
 
     repositories {
         mavenCentral()
+        jcenter()
         jcenter()
     }
 
@@ -17,6 +20,8 @@ buildscript {
         classpath "mysql:mysql-connector-java:$mysqlVersion"
     }
 }
+
+
 
 apply plugin: DependenciesGraphPlugin
 
